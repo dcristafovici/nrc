@@ -14,6 +14,7 @@ html(class="no-js", lang="ru")
   include ../components/licenses/licenses
   include ../components/team/team
   include ../components/videos/videos
+  include ../components/find/find
   head
     +head(head.defaults)
   body.page
@@ -44,6 +45,8 @@ html(class="no-js", lang="ru")
       +team()
 
       +videos()
+
+      +find()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();

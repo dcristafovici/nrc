@@ -1,0 +1,65 @@
+.find
+  position relative
+  background url('../img/assets/find/find.jpg') no-repeat center/cover
+  padding-bottom 107px
+  padding-top 144px
+  bb()
+  bb()
+  &::before
+    content ''
+    position absolute
+    left 0
+    top 0
+    width 100%  
+    height 100%
+    background #171717
+    opacity 0.89
+  .title
+    margin-bottom 106px
+    span
+      text-align: left
+      strong
+        color $wh
+
+  .content
+    position relative
+    z-index 3
+
+  &-items
+    max-width: 50%
+    margin 0 auto
+    display flex
+    flex-wrap: wrap
+  &-item
+    width 50%
+    margin-bottom 75px
+    bb()
+    &:last-child
+      margin-bottom 0
+    &__number
+      font-family $Extra
+      font-size 80px
+      line-height 1
+      margin-bottom 20px
+      color rgba(255,255,255, 0.4)
+    &__text
+      padding-left 100px
+      span
+        display block
+        font-size 22px
+        font-family $Semi
+        margin-bottom 11px
+        position relative
+        &::before
+          content ''
+          position absolute
+          width 30px
+          height 1px
+          top 7px
+          background $wh
+          left -55px
+      p 
+        font-size 18px
+        line-height 1.5
+        color $wh
+        font-family $Reg
