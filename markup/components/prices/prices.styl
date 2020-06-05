@@ -1,0 +1,69 @@
+.prices
+  padding-top 240px
+  padding-bottom 190px
+  .title
+    margin-bottom 65px
+    text-align center
+  &-item
+    &__row
+      display flex
+      align-items center
+      padding 25px 0
+      &:last-child
+        border-bottom none
+      span
+        font-size 18px
+        line-height 1.5
+        color $wh
+        font-family $Medium
+  &-wrapper
+    max-width: 1150px
+    margin 0 auto
+  &-tabs
+    margin-bottom 40px
+    ul
+      display flex
+      li
+        flex: auto
+        
+        span
+          font-size 22px
+          line-height 33px
+          font-family $Semi
+          position relative
+          &::before
+            content ''
+            position absolute
+            bottom -4px
+            left 0
+            width 100%
+            height 2px
+            background $ac
+  &-info
+    margin-bottom 70px
+    p
+      font-size 18px
+      line-height 1.5
+      color $wh
+
+  &-item
+    &__row
+      display flex
+      justify-content space-between
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      align-items center
+      span
+        font-size 18px
+        line-height 1.5
+        font-family $Reg
+    &__button
+      margin-top 20px
+
+
+.prices
+  position relative
+  &-img
+    position absolute
+    left 70px
+    top 50%
+    transform: translateY(-50%)

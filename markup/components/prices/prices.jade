@@ -1,0 +1,55 @@
+mixin prices(data)
+  section.prices
+    .prices-img
+      img(src="static/img/assets/prices/pr.svg", alt="Prices")
+    .content
+      .title
+        h2 Ни 1 заказчик не ушел без помощи
+        span 
+          strong Поддержка  
+          |  в различных нишах с работой 
+          strong   на 100% 
+    
+      .prices-wrapper
+        .prices-tabs
+          ul  
+            li
+              span СРО строителей
+            li 
+              span СРО изыскателей
+            li
+              span СРО проектировщиков
+        .prices-info
+          p Помогаем компаниям в сфере капитального строительства выбрать саморегулируемую организацию, подготовить документы и стать ее участником
+
+
+        .prices-items
+
+          //- Prices Item
+          .prices-item
+            .prices-item__row
+              span Консультация
+              span Бесплатно
+            .prices-item__row
+              span Оформление документов
+              span Бесплатно
+            .prices-item__row
+              span Регистрация специалистов в НРС
+              span Бесплатно
+            .prices-item__row
+              span Страховка
+              span От 0 ₽
+            .prices-item__row
+              span Вступительный взнос
+              span От 5 000 ₽
+            .prices-item__row
+              span Членский взнос 
+              span От 5 000 ₽
+            .prices-item__row
+              span Компенсационный фонд 
+              span От 100 000 ₽
+          
+          .prices-item__button
+            +button('#','Узнать подробнее')
+
+    
