@@ -8,6 +8,7 @@ html(class="no-js", lang="ru")
   include ../components/conditions/conditions
   include ../components/solution/solution
   include ../components/reasons/reasons
+  include ../components/callback/callback
 
   head
     +head(head.defaults)
@@ -27,6 +28,8 @@ html(class="no-js", lang="ru")
       +solution()
 
       +reasons()
+
+      +callback()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();

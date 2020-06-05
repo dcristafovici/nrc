@@ -1,0 +1,16 @@
+mixin callback(data)
+  section.callback
+    .callback-image
+      img(src="static/img/assets/callback/callback.jpg" srcset='static/img/assets/callback/callback@15x.jpg 1.5x, static/img/assets/callback/callback@2x.jpg 2x' alt="Callback")
+    .content
+      .title
+        h2 Написать личному менеджеру
+      .callback-form
+        form
+          .form-group
+            input(type="text" placeholder='Имя')
+          .form-group
+            input(type="tel" placeholder='Телефон')
+          .form-group.form-group__button
+            button.button 
+              span Написать менеджеру
