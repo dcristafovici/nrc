@@ -1,0 +1,61 @@
+.faq
+  padding-top 110px
+  padding-bottom 180px
+  .title
+    margin-bottom 85px
+    h2
+      color $ac
+    span
+      text-align left
+
+
+  &-items
+    display flex
+    justify-content space-between
+    flex-wrap: wrap
+  &-item
+    width calc(50% - 53px)
+    margin-bottom 40px
+    &__answer
+      display none
+      p
+        padding-left 83px
+        bb()
+        color #959595
+        font-size 18px
+        line-height 1.5
+        padding-top 12px
+        padding-right 50px
+        bb()
+    &__question
+      display flex
+      align-items flex-end
+      padding-bottom 13px
+      border-bottom 1px solid $wh
+      cursor pointer
+      position relative
+      &.active
+        &::after
+          transform: rotate(180deg)
+      &::after
+        content ''
+        position absolute
+        width 18px
+        transition: $tr
+        height 8px
+        background url('../img/assets/faq/arr.svg') no-repeat center/contain
+        right 0
+        top 50%
+        margin-top -4px
+      span
+        &:first-child
+          font-size 50px
+          font-family $Semi
+          line-height 1
+          width 70px
+          margin-right 13px
+        &:last-child
+          width calc(100% - 83px)
+          font-size 18px
+          font-family $Semi
+          line-height 1.5
