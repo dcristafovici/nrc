@@ -1,0 +1,58 @@
+.header
+  position absolute
+  top 55px
+  width 100%
+  z-index 4
+  left 0
+  &-wrapper
+    display flex
+    align-items center
+    justify-content space-between
+  &-left
+    display flex
+    align-items center
+  &-right
+    display flex
+    align-items center
+    justify-content flex-end
+  .logo
+    margin-right 30px
+
+.logo
+  display flex
+  justify-content center
+  align-items center
+nav.menu
+  ul
+    display flex
+    align-items center
+    li
+      margin-right 70px
+      &:last-child
+        margin-right 0
+    a
+      color $wh
+      opacity 0.85
+      font-size 18px
+      line-height 3
+
+.header
+  &-phone
+    margin-right 65px
+    a
+      display block
+      font-size 20px
+      line-height 2
+      color $wh
+      font-family $Bold
+      padding-left 45px
+      position relative
+      &::before
+        content ''
+        position absolute
+        top 50%
+        margin-top -10px
+        left 0
+        width 20px
+        height 20px
+        background url('../img/assets/header/phone.svg') no-repeat center/contain

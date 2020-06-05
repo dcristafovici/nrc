@@ -1,0 +1,108 @@
+.home
+  padding-top 300px
+  padding-bottom 80px
+  background #0E0E0E
+  position relative
+  .title
+    margin-bottom 50px
+  &-tagline
+    padding-left 230px
+    margin-bottom 65px
+    position relative
+    &::before
+      content ''
+      position absolute
+      left 0
+      top 20px
+      width 204px
+      height 5px
+      background url('../img/assets/home/radial.svg') no-repeat center/contain
+    span
+      display block
+      color: $txt;
+      font-size 22px
+      line-height 1.88
+  &-button
+    padding-left 230px
+    margin-bottom 105px
+    bb()
+
+
+  &-items
+    display flex
+    flex-wrap: wrap
+    padding-right 170px
+    bb()
+  &-item
+    width 50%
+    margin-bottom 20px
+    position relative
+    bb()
+    padding-left 55px
+    &::before
+      content ''
+      position absolute
+      left 0
+      top 5px
+      width 18px  
+      height 18px
+      border-radius: 50%
+      border 1px solid $txt
+    &::after
+      content ''
+      position absolute
+      left 7.5px
+      top 12px
+      background $ac
+      width 6px
+      height 6px
+      border-radius: 50%
+    span
+      display block
+      font-size 18px
+      line-height 1.88
+      color $txt
+
+
+
+.home
+  &-video
+    position absolute
+    right 0
+    height 100%
+    width 50%
+    top 0
+    &__bg
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      img
+        width 100%  
+        height 100%
+        object-fit: cover
+
+    &__icon
+      width 145px
+      height 145px
+      background url('../img/assets/home/round.svg') no-repeat center/contain
+      display flex
+      justify-content center
+      align-items center
+    &__info
+      position absolute
+      z-index 1
+      left 0
+      top 0
+      width 100%
+      height 100%
+      display flex
+      align-items center
+      padding-left 14.4329896907%
+      span
+        display block
+        margin-right 40px
+        font-size 24px
+        line-height 1.2
+        font-family $Reg

@@ -1,0 +1,25 @@
+mixin header(data)
+  header.header 
+    .content
+      .header-wrapper
+        .header-left
+          a(href="index.html").logo
+            img(src="static/img/assets/header/logo.svg", alt="Logo SVG")
+          nav.menu
+            ul
+              li
+                a(href="#") Цены 
+              li
+                a(href="#") Отзывы
+              li
+                a(href="#") Наша команда
+              li
+                a(href="#") Контакты
+        
+        .header-right
+
+          .header-phone
+            a(href="tel:8 800-775-36-16") 8 800-775-36-16
+          
+          .header-button
+            +button('#','Заказать звонок').button-transparent

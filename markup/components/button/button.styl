@@ -1,0 +1,35 @@
+.button
+  display inline-flex
+  align-items center
+  height 81px
+  cursor pointer
+  outline: none
+  background none
+  padding-left 73px
+  padding-right 73px
+  border-radius: 100px
+  overflow hidden
+  bb()
+  border: 1px solid transparent
+  position relative
+  &::before
+    content ''
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background linear-gradient(230.14deg, #B47E48 24.45%, #CFA57B 41.18%, #B47E48 58.25%);
+  span
+    font-size 18px
+    font-family $Bold
+    position relative
+    z-index 2
+  
+  &.button-transparent
+    border: 1px solid $ac
+    height 60px
+    &::before
+      opacity 0
+    span
+      color $ac

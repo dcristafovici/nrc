@@ -1,0 +1,40 @@
+include ../button/button
+mixin home(data)
+  section.home
+    .home-video
+      .home-video__bg
+        img(src="static/img/assets/home/home.jpg" srcset='static/img/assets/home/home@2x.jpg 2x, static/img/assets/home/home@15x.jpg 1.5x' alt="Home")
+      .home-video__info
+        span Посмотрите 
+          br
+          | видео о нас
+        .home-video__icon
+          img(src="static/img/assets/home/play.svg", alt="Home Play")
+    .content  
+
+      .title
+        h1 Экспресс-внесение
+          br
+          |  специалистов в 
+          span.text-gradient НРС за 3 дня 
+
+      .home-tagline
+        span  Решим вашу задачу легальным способом,
+          br
+          | предоставив своих сотрудников или внеся
+          br
+          |  в реестр ваших
+    
+      .home-button
+        +button('#','Связаться с нами')
+      
+      .home-items
+        .home-item
+          span Заключаем официальный договор и соблюдаем сроки
+        .home-item
+          span Юридическая гарантия результата
+        .home-item
+          span Вернём деньги, если не добьёмся результата
+        .home-item
+          span Даем контакты клиентов, для подтверждени реальности результатов
+    
