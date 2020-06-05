@@ -15,6 +15,7 @@ html(class="no-js", lang="ru")
   include ../components/team/team
   include ../components/videos/videos
   include ../components/find/find
+  include ../components/check/check
   head
     +head(head.defaults)
   body.page
@@ -47,6 +48,10 @@ html(class="no-js", lang="ru")
       +videos()
 
       +find()
+
+      +check()
+
+      +conditions()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
