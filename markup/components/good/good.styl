@@ -1,0 +1,67 @@
+.good
+  padding-top 70px
+  padding-bottom 100px
+  .title
+    text-align center
+    margin-bottom 70px
+  &-slide
+    display flex
+    &__text
+      width 42.5925925926%
+      padding-right 70px
+      bb()
+    &__photos
+      display flex
+      justify-content space-between
+      width 57.4074074074%
+      justify-content space-between
+      img
+        width calc(50% - 5px)
+        margin-right 20px
+        object-fit: cover
+        &:last-child
+          margin-right 0
+  
+  &-slide
+    &__text
+      span
+        display block
+        color $ac
+        font-family $Bold
+        line-height 1.5
+        margin-bottom 30px
+        font-size 22px
+      p 
+        &:first-child
+          margin-top 0
+        margin-top 50px
+        &:last-child
+          margin-bottom 0
+        strong
+          font-family $Semi
+          display block
+      li
+        font-size 18px
+        line-height 1.5
+      ul
+        list-style-type: disc
+        margin-left 20px
+
+      
+.good
+  &-slide
+    margin 0 10px
+    outline: none
+    &__wrapper
+      display flex
+      justify-content space-between
+  .slick-list
+    margin 0 -10px
+  .slick-arrow
+    
+    &.slick-prev
+      margin-left -70px
+      left 50%
+    &.slick-next
+      margin-right -70px
+      left 50%
