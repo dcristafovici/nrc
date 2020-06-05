@@ -1,0 +1,51 @@
+.reasons
+  background #171717
+  padding-top 130px
+  padding-bottom 135px
+  .title
+    text-align center
+    margin-bottom 80px
+  &-items
+    display flex
+    margin-bottom -100px
+    flex-wrap: wrap
+  &-item
+    width 25%
+    margin-bottom 100px
+    bb()
+    &__icon
+      height 90px
+      img
+        max-height: 100%
+    &__top
+      display flex
+      align-items center
+      margin-bottom 35px
+    &__number
+      margin-right 50px
+      width 90px
+      span
+        display block
+        font-size 80px
+        line-height 1
+        color: rgba(220, 220, 220, 0.1);
+        font-family $Bold
+    &__center
+      padding-left 140px
+      bb()
+      span
+        display block
+        font-size 18px
+        font-family $Bold
+        min-height: 55px
+        margin-bottom 15px
+        line-height 1.5
+        position relative
+        &::before
+          content ''
+          position absolute
+          left -50px
+          width 30px
+          height 1px
+          background $wh
+          top 12px
