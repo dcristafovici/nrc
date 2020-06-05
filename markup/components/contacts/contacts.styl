@@ -1,0 +1,61 @@
+.contacts
+  padding-top 200px
+  padding-bottom 140px
+  .title
+    margin-bottom 45px
+    h2
+      color $ac
+    span
+      text-align: left
+      padding-left 45px
+      bb()
+  &-item
+    padding-left 45px
+    margin-bottom 30px
+    position relative
+    &::before
+      content ''
+      position absolute
+      left 0
+      top 10px
+      width 20px
+      height 20px
+      background url('../img/assets/contacts/p1.svg') no-repeat center/contain
+    &:nth-child(2)
+      &::before
+        background url('../img/assets/contacts/p2.svg') no-repeat center/contain
+    &:last-child
+      margin-bottom 0
+    a
+      font-size 20px
+      line-height 2
+      font-family $Bold
+      color $wh
+ 
+      display block
+    span
+      display block
+      color $wh
+      font-size 20px
+      line-height 2
+      font-family $Reg
+
+.contacts
+  position relative
+  #maped
+    position absolute
+    bottom 0
+    right 0
+    overflow hidden
+    height 500px
+    &::before
+      content ''
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      background: linear-gradient(90.06deg, rgba(23, 23, 23, 0.69) 0.03%, #171717 99.97%);
+
+    img
+      max-height: 100%

@@ -18,6 +18,9 @@ html(class="no-js", lang="ru")
   include ../components/check/check
   include ../components/good/good
   include ../components/faq/faq
+  include ../components/proud/proud
+  include ../components/reviews/reviews
+  include ../components/contacts/contacts
   head
     +head(head.defaults)
   body.page
@@ -58,6 +61,14 @@ html(class="no-js", lang="ru")
       +good()
 
       +faq()
+
+      +proud()
+
+      +reviews()
+
+      +callback()
+
+      +contacts()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
