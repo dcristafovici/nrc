@@ -5,7 +5,8 @@ html(class="no-js", lang="ru")
   include ../components/header/header
   include ../components/home/home
   include ../components/today/today
-
+  include ../components/conditions/conditions
+  include ../components/solution/solution
 
   head
     +head(head.defaults)
@@ -19,6 +20,10 @@ html(class="no-js", lang="ru")
       +home()
 
       +today()
+
+      +conditions()
+
+      +solution()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();

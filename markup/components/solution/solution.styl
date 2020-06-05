@@ -1,0 +1,61 @@
+.solution 
+  background #171717
+  padding-top 150px
+  padding-bottom 110px
+  position relative
+  &-coat
+    position absolute
+    top 50%
+    transform: translateY(-50%)
+    left -125px
+  .content
+    padding-left 35.4938271605%
+    bb()
+  .title
+    margin-bottom 25px
+  &-content
+    margin-bottom 40px
+    span
+      display block
+      font-size 22px
+      line-height 1
+      color $wh
+      margin-bottom 40px
+
+  &-result
+    &__name
+      font-family $Bold
+      margin-bottom 50px
+      color $ac
+      font-size 18px
+      line-height 1.5 
+    &__list
+      li 
+        padding-left 55px
+        display block
+        font-size 18px
+        line-height 1.88
+        position relative
+        margin-bottom 15px
+        color $txt
+        &:last-child
+          margin-bottom 0
+        &::before
+          content ''
+          position absolute
+          left 0
+          top 5px
+          width 18px  
+          height 18px
+          border-radius: 50%
+          border 1px solid $txt
+        &::after
+          content ''
+          position absolute
+          left 7.5px
+          top 12px
+          background $ac
+          width 6px
+          height 6px
+          border-radius: 50%
+            
