@@ -35,3 +35,37 @@ textarea
     color $wh
 button
   color $wh
+
+.home-form
+
+  .form-group
+    &::after
+      content none
+  input
+    height 80px
+    padding-left 52px
+    color: #494949;
+    padding-right 32px
+    background $wh
+    border-radius: 40px
+    text-shadow: none
+    bb()
+    +placeholder()
+      color: #494949;
+      
+  .form-row
+    display flex
+    align-items center
+    .form-group
+      margin-top 0
+      button
+        height 82px
+      &.form-group__button
+        position relative
+        left -60px
+        
+
+.home
+  &-form
+    padding-left 230px
+    bb()
