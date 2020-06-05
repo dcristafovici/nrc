@@ -1,0 +1,108 @@
+.today
+  padding-top 200px
+  padding-bottom 180px
+  background #171717
+  .title
+    text-align center
+    margin-bottom 100px
+    
+  &-center
+    padding-left 190px
+    position relative
+  &-tagline
+    position absolute
+    top -60%
+    left 0
+  &-slide
+    padding-top 30px
+    padding-left 20px
+    width 470px
+    bb()
+    &__wrapper
+      padding-top 50px
+      padding-left 25px
+      padding-right 30px
+      padding-bottom 23px
+      width 410px
+      bb()
+      width 100%
+      position relative
+      background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0.28) 100%);
+    &__img
+      position absolute
+      right -30px
+      top -20px
+    &__name
+      font-size 18px
+      line-height 1.3
+      font-family $Bold
+      margin-bottom 27px
+    &__text
+      margin-bottom 70px
+    &__btn
+      a
+        color $ac
+        font-size 18px
+        font-family $Bold
+        display block
+        padding-left 60px
+        position relative
+        left -45px
+        &::before
+          content ''
+          position absolute
+          width 36px
+          height 1px
+          background $ac
+          left 0
+          top 50%
+          margin-top -0.5px
+
+
+
+.today
+  .slick-slide
+    margin 0 29px
+    outline: none
+  .slick-list
+    margin 0 -29px
+
+  &-slider
+    position relative
+    width calc(100% + ((100vw - 1620px) / 2))
+  .slick-track
+    display flex 
+  .slick-slide
+    height inherit 
+  &-slide
+    &__wrapper
+      height 100%
+
+  
+  
+.slick-arrow
+  width 46px
+  height 46px
+  border-radius: 50%
+  background #494949
+  font-size: 0
+  border none
+  outline: none 
+  cursor pointer
+  position absolute
+  bottom -86px
+  left 0
+  &::before
+    content ''
+    position absolute
+    width 16px
+    height 16px
+    background url('../img/assets/today/arr.svg') no-repeat center/contain
+    left 50%
+    top 50%
+    margin-left -8px
+    margin-top -8px
+  &.slick-next
+    left 60px
+    &::before
+      transform: rotate(180deg)
