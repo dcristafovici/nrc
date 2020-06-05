@@ -1,0 +1,54 @@
+.pick
+  padding-top 160px
+  padding-bottom 200px
+  .title
+    margin-bottom 40px
+
+  &-name
+    font-size 22px
+    color $wh
+    margin-bottom 40px
+  &-paragraph
+    margin-bottom 53px
+  &-span
+    font-size 18px
+    line-height 2
+    margin-bottom 50px
+    color $ac
+    strong
+      font-family $Bold
+  &-content
+    max-width: 950px
+    span
+      color $ac
+      strong
+        font-family $Bold
+  &-list
+    li 
+      padding-left 55px
+      display block
+      font-size 18px
+      line-height 1.88
+      position relative
+      margin-bottom 15px
+      color $txt
+      &:last-child
+        margin-bottom 0
+      &::before
+        content ''
+        position absolute
+        left 0
+        top 5px
+        width 18px  
+        height 18px
+        border-radius: 50%
+        border 1px solid $txt
+      &::after
+        content ''
+        position absolute
+        left 7.5px
+        top 12px
+        background $ac
+        width 6px
+        height 6px
+        border-radius: 50%

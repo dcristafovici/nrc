@@ -5,6 +5,11 @@ html(class="no-js", lang="ru")
   include ../components/header/header
   include ../components/cpo/cpo
   include ../components/prices/prices
+  include ../components/payback/payback
+  include ../components/solution/solution
+  include ../components/pick/pick
+  include ../components/reasons/reasons
+  include ../components/callback/callback
   head
     +head(head.defaults)
   body.page
@@ -17,6 +22,16 @@ html(class="no-js", lang="ru")
       +cpo()
 
       +prices()
+
+      +payback()
+
+      +solution()
+
+      +pick()
+
+      +reasons()
+
+      +callback
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();
