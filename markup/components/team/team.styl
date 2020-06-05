@@ -1,0 +1,76 @@
+.team
+  &-text
+    margin-bottom 65px
+    span
+      font-size 22px
+      line-height 1.5
+  &-slide
+    width 500px
+    height 680px
+    position relative
+    &__photo
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      &::before
+        content ''
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 33.81%, #000000 94.08%);
+      img
+        width 100%
+        height 100%
+        object-fit: cover
+    &__text
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      z-index 4
+      padding 30px
+      padding-left 40px 
+      bb()
+      display flex
+      flex-direction: column
+      justify-content flex-end
+      align-items flex-start
+      span
+        display block
+        &:first-child
+          font-size 22px
+          font-family $Bold
+          color $wh
+          line-height 1.5
+        &:nth-child(2)
+          font-size 22px
+          line-height 1.5
+          font-family $Reg
+
+.team
+  padding-bottom 105px
+  &-slider
+    width calc(100% + calc((100vw - 1620px) / 2))
+    padding-left 125px
+    bb()
+  .slick-slide
+    outline: none
+    margin 0 5px
+  .slick-list 
+    margin 0 -5px
+  
+  .slick-arrow
+    &.slick-prev
+      display none !important
+    &.slick-next
+      left -103px
+      bottom: auto
+      top 50%
+      transform: translateX(-50%)
+      &::before
+        transform: none
