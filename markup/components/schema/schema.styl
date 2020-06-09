@@ -1,0 +1,91 @@
+.schema
+  padding-bottom 165px
+  .title
+    margin-bottom 127px
+    span
+      text-align: left
+
+  &-wrapper
+    display flex
+    justify-content space-between
+  
+
+  &-left
+    width 30.8641975309%
+    padding-right 30px
+    bb()
+  &-right
+    width 69.1358024691%
+
+  &-point
+    padding-bottom 120px
+    position relative
+    max-width: 400px
+    &::after
+      content ''
+      position absolute
+      width 31px  
+      height 31px
+      background url('../img/assets/schema/arr.svg') no-repeat center/contain
+      left 140px
+      bottom 50px
+
+    &:last-child
+      padding-bottom 0
+      &::after
+        content none
+    span
+      display block
+      font-size 18px
+      line-height 1.5
+      color $wh
+      margin-bottom 6px
+    a
+      display block
+      font-size 18px
+      line-height 1.5
+      font-family $Bold
+      color $ac
+      text-decoration underline
+      position relative
+      &::before
+        content ''
+        position absolute
+        left -45px
+        width 30px
+        height 1px
+        background $ac
+        top 11px
+
+
+// Schema Items
+.schema-items
+  display flex
+  justify-content space-between
+  flex-wrap: wrap
+
+.schema
+  &-item
+    width calc(50% - 25px)
+    display flex
+    margin-bottom 90px
+    justify-content space-between
+    &:last-child
+      margin-bottom 0
+    &__icon
+      width 100px
+    &__text
+      width calc(100% - 130px)
+      > span
+        font-size 18px
+        line-height 1.5
+        display block
+        font-family $Bold
+        color $wh
+        margin-bottom 25px
+      > p
+        font-size 18px
+        line-height 1.5
+        color $wh
+        margin-bottom 80px
+        font-family $Reg

@@ -24,8 +24,12 @@
     ul
       display flex
       li
+        cursor pointer
         flex: auto
-        
+        &.active
+          span
+            &::before
+              opacity 1
         span
           font-size 22px
           line-height 33px
@@ -37,6 +41,8 @@
             bottom -4px
             left 0
             width 100%
+            transition: $tr
+            opacity 0
             height 2px
             background $ac
   &-info
@@ -67,3 +73,24 @@
     left 70px
     top 50%
     transform: translateY(-50%)
+
+.prices
+  &-items
+    position relative
+  &-item
+    position absolute
+    z-index -1
+    visibility hidden
+    pointer-events: none
+    transform: translateX(-20px)
+    left 0
+    opacity 0
+    top 0
+    &.active
+      position relative
+      z-index 4
+      visibility visible
+      opacity 1
+      pointer-events: all
+      transform: translateX(0)
+      transition: $tr
