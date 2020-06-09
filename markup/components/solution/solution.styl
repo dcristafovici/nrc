@@ -8,6 +8,8 @@
     top 50%
     transform: translateY(-50%)
     left -125px
+    img
+      display block
   .content
     padding-left 35.4938271605%
     bb()
@@ -59,3 +61,33 @@
           height 6px
           border-radius: 50%
             
+
+
+.solution
+  
+  &-content
+    p,
+    span
+      hdnt()
+      transition-delay: .2s
+    span
+      transition-delay: .4s
+    &.is-inview
+      p,
+      span
+        showt()
+
+  &-result
+    &__name
+      hdnt()
+      transition-delay: .2s
+    &__list
+      li
+        hdnt()
+        transition-delay: .4s
+    &.is-inview
+      .solution
+        &-result
+          &__name,
+          &__list li
+            showt()

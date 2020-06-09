@@ -3,7 +3,7 @@ mixin conditions(data)
     .conditions-image
       img(src="static/img/assets/conditions/cond.png" srcset='static/img/assets/conditions/cond@2x.png 2x, static/img/assets/conditions/cond@15x.png 1.5x' alt="Conditions")
     .content
-      .title
+      .title(data-scroll data-scroll-speed='1.1' data-scroll-offset='50')
         h2 Уточните условия сотрудничества
         span Получите точный расчет стоимости  
           strong  через 2 минуты

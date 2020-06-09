@@ -135,3 +135,42 @@
     position absolute
     left 0
     top 0
+
+.home
+  .title
+    hdnt()
+    transition-delay: .8s
+  &-tagline
+    hdnt()
+    transition-delay: .9s
+  &-video__info
+    opacity 0
+    transition: all 1s ease
+    transition-delay 1s
+    
+  &-button
+    hdnt()
+    transition-delay: 1.1s
+  &-item
+    hdnt()
+    transition-delay: 1.2s
+    &:nth-child(2)
+      transition-delay: 1.3s
+    &:nth-child(3)
+      transition-delay: 1.4s
+    &:nth-child(4)
+      transition-delay: 1.5s
+
+  &-icon
+    hdnt()
+    transition-delay: 1.6s
+body.loaded
+  .home
+    .title
+      showt()
+    &-tagline,
+    &-video__info,
+    &-button,
+    &-item,
+    &-icon
+      showt()

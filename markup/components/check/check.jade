@@ -1,7 +1,7 @@
 mixin check(data)
   section.check
     .content
-      .title
+      .title(data-scroll data-scroll-speed='1.2' data-scroll-offset='50')
         h2 Проверяем компании и специалистов
           br
           |  на соответствие заданным критериям
@@ -13,7 +13,7 @@ mixin check(data)
           li Общие требования
       
 
-      .check-items
+      .check-items(data-scroll  data-scroll-offset='50')
 
         .check-item.active
           .check-item__photo

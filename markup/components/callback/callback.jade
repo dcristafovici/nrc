@@ -3,9 +3,9 @@ mixin callback(data)
     .callback-image
       img(src="static/img/assets/callback/callback.jpg" srcset='static/img/assets/callback/callback@15x.jpg 1.5x, static/img/assets/callback/callback@2x.jpg 2x' alt="Callback")
     .content
-      .title
+      .title(data-scroll data-scroll-speed='1' data-scroll-offset='50')
         h2 Написать личному менеджеру
-      .callback-form
+      .callback-form(data-scroll  data-scroll-offset='50')
         form
           .form-group
             input(type="text" placeholder='Имя')

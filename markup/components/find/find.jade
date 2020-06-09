@@ -1,7 +1,7 @@
 mixin find(data)
   section.find
     .content
-      .title
+      .title(data-scroll data-scroll-speed='1.2' data-scroll-offset='50')
         h2 Найдем решение любой задачи
         span Шаги по достижению поставленной цели от 
           strong 24 
@@ -11,21 +11,21 @@ mixin find(data)
 
 
         //- Find Item
-        .find-item
+        .find-item(data-scroll data-scroll-offset='50')
           .find-item__number 01
           .find-item__text
             span Заявка
             p Расскажите, в какой реестр и в какие сроки нужно попасть
         
         //- Find Item
-        .find-item
+        .find-item(data-scroll data-scroll-offset='50')
           .find-item__number 02
           .find-item__text
             span Постановка задач
             p Определяем, требуется ли включить в реестры ваших сотрудников или дополнить коллектив нашими
 
         //- Find Item
-        .find-item
+        .find-item(data-scroll data-scroll-offset='50')
           .find-item__number 03
           .find-item__text
             span Заключение договора
@@ -33,14 +33,14 @@ mixin find(data)
 
 
         //- Find Item
-        .find-item
+        .find-item(data-scroll data-scroll-offset='50')
           .find-item__number 04
           .find-item__text
             span Подготовка документов
             p Собираем копии паспортов, дипломов, должностных инструкций, пишем заявления
       
         //- Find Item
-        .find-item
+        .find-item(data-scroll data-scroll-offset='50')
           .find-item__number 05
           .find-item__text
             span Результат

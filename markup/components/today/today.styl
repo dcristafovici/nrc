@@ -114,3 +114,41 @@
     left 60px
     &::before
       transform: rotate(180deg)
+
+
+.today
+  &-tagline
+    img
+      transition: $tr
+      transform: translateX(-1vw)
+      transition: all 1s ease
+      opacity 0
+    &.is-inview
+      img
+        opacity 1
+        transform: translateX(0)
+
+
+
+.today-slide
+  &__name,
+  &__img,
+  &__text,
+  &__btn
+    hdnt()
+  
+  &__name
+    transition-delay: .1s
+  &__text
+    transition-delay: .2s
+  &__btn
+    transition-delay: .3s
+  
+
+.today-slider.is-inview
+  .today-slide
+    &__name,
+    &__img,
+    &__btn,
+    &__text
+      showt()

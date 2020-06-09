@@ -27,51 +27,53 @@ html(class="no-js", lang="ru")
   body.page
     |%=symbols=%
 
-    main.cpo-main
+    div#js-scroll(data-scroll-container)
+      
+      main.cpo-main(data-scroll-section)
 
-      +header()
+        +header()
 
-      +home()
+        +home()
 
-      +today()
+        +today()
 
-      +conditions()
+        +conditions()
 
-      +solution()
+        +solution()
 
-      +reasons()
+        +reasons()
 
-      +callback()
+        +callback()
 
-      +fraud()
+        +fraud()
 
-      +about()
+        +about()
 
-      +licenses()
+        +licenses()
 
-      +team()
+        +team()
 
-      +videos()
+        +videos()
 
-      +find()
+        +find()
 
-      +check()
+        +check()
 
-      +conditions()
+        +conditions()
 
-      +good()
+        +good()
 
-      +faq()
+        +faq()
 
-      +proud()
+        +proud()
 
-      +reviews()
+        +reviews()
 
-      +callback()
+        +callback()
 
-      +contacts()
+        +contacts()
 
-      +popup()
+        +popup()
 
     script(src='%=static=%js/separate-js/svg4everybody.min.js')
     script svg4everybody();

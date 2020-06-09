@@ -50,3 +50,28 @@
     &:nth-child(4n)
       margin-right 0
     
+
+.fraud-info
+  span
+    hdnt()
+    transition-delay: .2s
+    display block
+    &:nth-child(2)
+      transition-delay: .4s
+  
+.fraud-label
+  span
+    hdnt()
+    transition-delay: .6s
+    display block
+  
+.fraud-info.is-inview,
+.fraud-label.is-inview
+  span
+    showt()
+
+.fraud-item
+  hdnt()
+  transition-delay: .3s
+  &.is-inview
+    showt()

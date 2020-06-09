@@ -161,3 +161,37 @@ nav.menu
   top: 0
   transform: rotate(-90deg)
   transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1)
+
+
+
+.header
+  .logo
+    hdn()
+  
+  nav.menu
+    li
+      hdn()
+      transition-delay: .2s
+      &:nth-child(2)
+        transition-delay: .3s
+      &:nth-child(3)
+        transition-delay: .4s
+      &:nth-child(4)
+        transition-delay: .5s
+  &-phone
+    hdn()
+    transition-delay: .6s
+  
+  &-button
+    hdn()
+    transition-delay: .7s
+
+
+body.loaded
+  .header
+    .logo,
+    nav.menu li,
+    &-phone,
+    &-button
+      show()
+

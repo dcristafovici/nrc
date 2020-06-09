@@ -49,3 +49,33 @@
           height 1px
           background $wh
           top 12px
+
+
+.reasons-item
+  &__number
+    transform: translateX(-1vw)
+    transition: all 1s ease
+    opacity 0
+  &__icon
+    transform: translateX(1vw)
+    transition: all 1s ease
+    opacity 0
+  &__center
+    span,
+    p
+      hdnt()
+    span
+      transition-delay: .2s
+    p
+      transition-delay: .4s
+
+.reasons-item.is-inview
+  .reasons-item
+    &__number,
+    &__icon
+      opacity 1
+      transform: translateX(0)
+    &__center
+      span,
+      p
+        showt()

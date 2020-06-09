@@ -65,3 +65,42 @@
     &.slick-next
       margin-right -70px
       left 50%
+
+
+.good
+  &-slide
+    &__text
+      span,
+      p,
+      ul
+        hdnt()
+        transition-delay: .2s
+        &:nth-child(2)
+          transition-delay: .3s
+        &:nth-child(3)
+          transition-delay: .4s
+        &:nth-child(4)
+          transition-delay: .5s
+        &:nth-child(5)
+          transition-delay: .6s
+        &:nth-child(6)
+          transition-delay: .7s
+    &__photos
+      img
+        hdnt()
+        transition-delay: .2s
+        &:nth-child(2)
+          transition-delay: .3s
+
+
+.good-slider.is-inview
+  .good
+    &-slide
+      &__text
+        p,
+        span,
+        ul
+          showt()
+      &__photos
+        img
+          showt()

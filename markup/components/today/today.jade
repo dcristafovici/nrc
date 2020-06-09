@@ -1,7 +1,7 @@
 mixin today(data)
   section.today
     .content
-      .title
+      .title(data-scroll data-scroll-speed='1.2' data-scroll-offset='50')
         h2 Обратитесь к нам сегодня
         span Получите 
           strong до 40% больше,
@@ -9,9 +9,9 @@ mixin today(data)
       
 
       .today-center
-        .today-tagline
+        .today-tagline(data-scroll data-scroll-speed='1.2' data-scroll-offset='100')
           img(src="static/img/assets/today/tagline.svg", alt="Tagline SVG")
-        .today-slider
+        .today-slider(data-scroll data-scroll-offset='50')
           .today-slides
 
             //- Today Slide

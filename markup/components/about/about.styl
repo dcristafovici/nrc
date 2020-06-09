@@ -62,3 +62,35 @@
         width 100%
         height 100%
         object-fit: cover
+
+
+
+.about
+  &-video
+    &__link
+      hdnt()
+      transition-delay: .3s
+    
+  &-info
+    p,
+    a
+      hdnt()
+    p
+      transition-delay: .5s
+      &:nth-child(2)
+        transition-delay: .7s
+    a
+      &:nth-child(3)
+        transition-delay: .9s
+
+
+.about-video
+  &.is-inview
+    .about-video__link
+      showt()
+  
+
+.about-info.is-inview
+  p,
+  a
+    showt()

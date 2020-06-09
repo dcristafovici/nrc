@@ -61,3 +61,20 @@
           font-size 18px
           font-family $Semi
           line-height 1.5
+
+
+
+.faq-item
+  &__question
+    span
+      hdnt()
+      transition-delay: .15s
+      &:nth-child(2)
+        transition-delay: .3s
+
+
+.faq-item
+  &.is-inview
+    .faq-item__question
+      span
+        showt()
