@@ -2,7 +2,7 @@
   position absolute
   top 55px
   width 100%
-  z-index 4
+  z-index 15
   left 0
   &-wrapper
     display flex
@@ -34,7 +34,11 @@ nav.menu
       color $wh
       opacity 0.85
       font-size 18px
+      transition: $tr
       line-height 3
+      &:hover
+        color $ac
+        opacity 1
 
 .header
   &-phone
@@ -47,11 +51,17 @@ nav.menu
       font-family $Bold
       padding-left 45px
       position relative
+      transition: $tr
+      &:hover
+        transform: translateX(5px)
+        &::before
+          transform: translateX(-5px)
       &::before
         content ''
         position absolute
         top 50%
         margin-top -10px
+        transition: $tr
         left 0
         width 20px
         height 20px

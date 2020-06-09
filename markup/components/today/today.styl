@@ -48,6 +48,9 @@
         padding-left 60px
         position relative
         left -45px
+        transition: $tr
+        &:hover
+          transform: translateX(10px)
         &::before
           content ''
           position absolute
@@ -92,6 +95,11 @@
   position absolute
   bottom -86px
   left 0
+  transition: $tr
+  &:hover
+    background $wh
+    &::before
+      background url('../img/assets/today/arr-ac.svg') no-repeat center/contain
   &::before
     content ''
     position absolute

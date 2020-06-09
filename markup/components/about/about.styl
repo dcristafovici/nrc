@@ -33,7 +33,10 @@
       font-family $EBold
       padding-left 50px
       bb()
+      transition: $tr
       position relative
+      &:hover
+        transform: translateX(10px)
       &::before
         content ''
         position absolute

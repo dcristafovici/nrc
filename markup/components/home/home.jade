@@ -1,10 +1,12 @@
 include ../button/button
 mixin home(data)
   section.home
+    .home-icon
+      img(src="static/img/assets/home/icon.svg", alt="Icon")
     .home-video
       .home-video__bg
         img(src="static/img/assets/home/home.jpg" srcset='static/img/assets/home/home@2x.jpg 2x, static/img/assets/home/home@15x.jpg 1.5x' alt="Home")
-      .home-video__info
+      a(href="https://www.youtube.com/watch?v=p3eCuLYSZKU" data-fancybox).home-video__info
         span Посмотрите 
           br
           | видео о нас

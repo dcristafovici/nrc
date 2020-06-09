@@ -12,12 +12,17 @@
   bb()
   border: 1px solid transparent
   position relative
+  transition: $tr
+  &:hover
+    &::before
+      background-position 300px 
   &::before
     content ''
     position absolute
     left 0
     top 0
     width 100%
+    transition: $tr
     height 100%
     background linear-gradient(230.14deg, #B47E48 24.45%, #CFA57B 41.18%, #B47E48 58.25%);
   span
@@ -31,6 +36,11 @@
     height 60px
     &::before
       opacity 0
+    &:hover
+      &::before
+        opacity 1
+      span
+        color $wh
     span
       color $ac
   
