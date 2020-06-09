@@ -1,4 +1,57 @@
 mixin popup(data)
   #overlay
-  .popup#popup
-    
+  //- .popup#popup
+  //-   .popup-wrapper
+  //-     .popup-image
+  //-       img(src="static/img/assets/popup/pop.jpg" srcset='static/img/assets/popup/pop@2x.jpg 2x, static/img/assets/popup/pop@15x.jpg 1.5x' alt="Popup")
+      
+  //-     .popup-form
+  //-       .popup-title
+  //-         span Укажите ваши актуальные
+  //-           br
+  //-           |  данные и мы с вами свяжемся 
+  //-           br
+  //-           | в течение 15 минут
+  //-       form
+  //-         .form-group
+  //-           input(type="text" placeholder='Имя')
+  //-         .form-group
+  //-           input(type="tel" placeholder='Телефон')
+  //-         .form-group
+  //-           input(type="email" placeholder='Е-майл')
+  //-         .form-group.form-group__button
+  //-           button.button 
+  //-             span Оставить заявку
+  
+  .popup#thanks
+    .popup-wrapper
+      .popup-image
+        img(src="static/img/assets/popup/pop.jpg" srcset='static/img/assets/popup/pop@2x.jpg 2x, static/img/assets/popup/pop@15x.jpg 1.5x' alt="Popup")
+      
+      .popup-form
+        .popup-title
+          span Спасибо,
+            br
+            |  ваша заявка отправлена!
+        .popup-span
+          span Долго ждать?
+        
+        .popup-label
+          span Наберите прямо сейчас
+
+        .popup-phone
+          a(href="tel:+7 900 - 000 - 00 - 00") +7 900 - 000 - 00 - 00
+        
+        .popup-social
+          .popup-social__name Или добавляйтесь в мессенджер
+          .popup-social__nav
+            ul
+              li
+                a(href="#")
+                  img(src="static/img/assets/popup/vk.svg", alt="")
+              li
+                a(href="#")
+                  img(src="static/img/assets/popup/facebook.svg", alt="")
+              li
+                a(href="#")
+                  img(src="static/img/assets/popup/instagram.svg", alt="")

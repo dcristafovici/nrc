@@ -374,6 +374,10 @@
 
 
 
+  .popup-image
+    height 600px
+  .popup-title span
+    font-size 24px
 
 @media screen and (max-width: 992px)
   .content
@@ -626,6 +630,13 @@
         background $gr
 
 
+  .popup-title span
+    font-size 20px
+    br
+      display none
+  .popup-image
+    height 500px
+
 @media screen and (max-width: 767px)
   .header-phone,
   .header-button
@@ -824,7 +835,22 @@
     padding-top 50px
 
 
+  .popup
+    &-image
+      display none
+    &-form
+      padding-top 50px
+      padding-bottom 50px
+      width 100%
 
+  .popup
+    max-width 500px
+
+  .popup-span span,
+  .popup-label span,
+  .popup-phone a,
+  .popup-social__name
+    font-size 18px
         
 @media screen and (max-width: 576px)
   .home
@@ -897,6 +923,14 @@
     line-height 1.4
   .prices-info p
     font-size 14px
+
+  .popup
+    max-width: 400px
+  .popup-title span
+    font-size 18px
+    line-height 1.4
+  
+  
 
 @media screen and (max-width: 480px)
   .header .logo
@@ -1088,3 +1122,27 @@
   
   .enter
     padding-bottom 100px
+    
+
+
+  .popup
+    max-width: 300px
+    padding 30px 20px
+    bb()
+    
+  .popup-form
+    padding 0
+  
+
+  .popup-title span
+    font-size 16px
+  .popup-span
+    margin-top 10px
+    margin-bottom 20px
+  .popup-span span, .popup-label span, .popup-phone a, .popup-social__name
+    font-size 14px
+  .popup-social__nav li
+    margin-right 15px
+  .popup-social__nav li a
+    width 30px
+    height 30px
