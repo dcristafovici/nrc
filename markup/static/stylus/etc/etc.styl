@@ -541,6 +541,27 @@
     display flex
     margin-left 20px
 
+  
+  .cpo
+    padding-top 140px
+    .title
+      margin-bottom 25px
+  .home-form input, .condition-form input
+    height 60px
+
+  .home-form .form-row .form-group button, .condition-form .form-row .form-group button
+    height 62px
+
+  .home-form input
+    padding-left 30px
+    font-size 16px
+  .cpo .home-tagline
+    margin-bottom 40px
+  .prices-tabs ul li span
+    font-size 18px
+  .enter .today-center
+    padding-left 0
+
 @media screen and (max-width: 768px)
   .header-phone,
   .header-button
@@ -671,6 +692,76 @@
   .proud .title
     margin-bottom 50px
 
+  .prices
+    padding-top 50px
+    padding-bottom 50px
+  .prices-tabs ul li span
+    font-size 15px
+  .prices-info p
+    font-size 16px
+    line-height 1.8
+  .prices-item__row span
+    font-size 16px
+    line-height 1.5
+  .condition-form input
+    padding-left 30px
+    font-size 16px
+  
+  .pick
+    padding-top 50px
+  .enter .title
+    margin-bottom 40px
+  .title h2 + span
+    line-height 1.5
+  .schema .title
+    margin-bottom 50px
+
+  .payback.conditions
+    height 400px
+    .form-row
+      flex-wrap: wrap
+      width 400px
+      display flex
+      flex-direction: column
+      .button 
+        padding 0
+        width 100%
+        justify-content center
+      .form-group
+        margin-right 0
+  
+  .enter
+    padding-top 50px
+  .title h2 + span
+    br
+      display none
+    
+  
+  .schema-point
+    width 100%
+    &:nth-child(2n)
+      text-align left
+    &:nth-child(2)
+      &::after
+        right auto
+        left 140px
+    &:nth-child(4)
+      &::after
+        content ''
+  
+  .schema-item
+    width 100%
+  
+  .schema
+    padding-bottom 50px
+  
+
+  .about
+    padding-top 50px
+
+
+
+        
 @media screen and (max-width: 576px)
   .home
     padding-bottom 120px
@@ -738,6 +829,10 @@
   .reviews
     padding-bottom 50px
 
+  .prices-tabs ul li span
+    line-height 1.4
+  .prices-info p
+    font-size 14px
 
 @media screen and (max-width: 480px)
   .header .logo
@@ -853,3 +948,79 @@
     padding-right 50px
   .reviews-slider .slick-arrow.slick-prev
     right -60px
+  
+  .cpo
+    padding-top 100px
+  h1
+    font-size 23px
+
+  .home-form
+    .form-row
+      flex-wrap wrap
+      .form-group.form-group__button
+        left 0
+        .button
+          width 100%
+          padding 0
+          justify-content center
+  
+  .cpo
+    padding-bottom 30px
+  .prices-tabs ul
+    flex-wrap wrap
+    span
+      height 30px
+    li
+      margin-bottom 10px
+  .prices-tabs
+    margin-bottom 30px
+  .prices-item__row 
+    justify-content space-between
+    span
+      font-size 14px
+      width calc(50% - 5px)
+      &:nth-child(2)
+        text-align: right
+  .payback.conditions .form-row
+    width 100%
+  .pick-name
+    font-size 16px
+    line-height 1.5
+
+  .pick-list li
+    font-size 14px
+    padding-left 35px
+  .pick-span
+    font-size 14px
+    margin-bottom 20px
+  .pick-paragraph
+    margin-bottom 20px
+  .pick-name
+    margin-bottom 20px
+  .pick .title
+    margin-bottom 30px
+  .schema-point::after,
+  .schema-point:nth-child(4)::after
+    content none
+  .schema-point
+    padding-bottom 40px
+    span,
+    a
+      font-size 14px
+
+  
+  .schema
+    &-item
+      flex-wrap: wrap
+      &__icon
+        width auto
+        margin-bottom 15px
+      &__text
+        width 100%
+        span
+          font-size 16px
+          margin-bottom 15px
+
+  
+  .enter
+    padding-bottom 100px
