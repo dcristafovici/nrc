@@ -52,3 +52,25 @@
         width 6px
         height 6px
         border-radius: 50%
+
+.pick
+  &-name,
+  &-paragraph,
+  &-span,
+  &-list
+    hdnt()
+    transition-delay: .2s
+  &-paragraph
+    transition-delay: .4s
+  &-span
+    transition-delay: .6s
+  &-list
+    transition-delay: .8s
+
+  &-content.is-inview
+    .pick
+      &-name,
+      &-paragraph,
+      &-span,
+      &-list
+        showt()

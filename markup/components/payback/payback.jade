@@ -3,11 +3,11 @@ mixin payback(data)
     .conditions-image
       img(src="static/img/assets/conditions/cond.png" srcset='static/img/assets/conditions/cond@2x.png 2x, static/img/assets/conditions/cond@15x.png 1.5x' alt="Conditions")
     .content
-      .title
+      .title(data-scroll data-scroll-speed='1.2' data-scroll-offset='50')
         h2 Окупаемость налицо
         span
           strong За 2 мин. оцените прибыль от небольших затрат
-      .condition-form
+      .condition-form(data-scroll  data-scroll-offset='50')
         form
           .form-row
             .form-group 

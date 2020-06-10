@@ -1,9 +1,9 @@
 mixin prices(data)
-  section.prices
-    .prices-img
+  section.prices#prices
+    .prices-img(data-scroll  data-scroll-offset='50')
       img(src="static/img/assets/prices/pr.svg", alt="Prices")
     .content
-      .title
+      .title(data-scroll data-scroll-speed='1.2' data-scroll-offset='50')
         h2 Ни 1 заказчик не ушел без помощи
         span 
           strong Поддержка  
@@ -11,7 +11,7 @@ mixin prices(data)
           strong   на 100% 
     
       .prices-wrapper
-        .prices-tabs
+        .prices-tabs(data-scroll  data-scroll-offset='50')
           ul  
             li.active
               span СРО строителей
@@ -19,11 +19,11 @@ mixin prices(data)
               span СРО изыскателей
             li
               span СРО проектировщиков
-        .prices-info
+        .prices-info(data-scroll  data-scroll-offset='50')
           p Помогаем компаниям в сфере капитального строительства выбрать саморегулируемую организацию, подготовить документы и стать ее участником
 
 
-        .prices-items
+        .prices-items(data-scroll  data-scroll-offset='50')
 
           //- Prices Item
           .prices-item.active

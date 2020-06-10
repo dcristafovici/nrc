@@ -1,7 +1,7 @@
 mixin enter(data)
   section.enter
     .content
-      .title
+      .title(data-scroll data-scroll-speed='1.2' data-scroll-offset='50')
         h2 42% организаций не помогают 
           br
           | клиентам вступить в СРО
@@ -13,10 +13,10 @@ mixin enter(data)
       
 
       .today-center
-        .today-tagline
+        .today-tagline(data-scroll data-scroll-speed='1.2' data-scroll-offset='100')
           span Помощь при вступлении в СРО часто предлагают недобросовестные исполнители и откровенные мошенники. Чтобы не стать их жертвой, не потратить впустую время и деньги, 
             strong запомните 6 признаков обмана
-        .today-slider
+        .today-slider(data-scroll data-scroll-offset='50')
           .today-slides
 
             //- Today Slide

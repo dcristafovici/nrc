@@ -1,7 +1,7 @@
 mixin schema(data)
   section.schema
     .content
-      .title
+      .title(data-scroll data-scroll-speed='1.2' data-scroll-offset='50')
         h2 Пошаговая схема реализации задачи
         span Все платежи 1 на 1 с СРО, а остальное на нас
 
@@ -11,29 +11,29 @@ mixin schema(data)
         .schema-left
           .schema-points
 
-            .schema-point
+            .schema-point(data-scroll  data-scroll-offset='50')
               span Помогаем выбрать надежное СРО
               a(href="#") Узнать, какое СРО подойдет вам
-            .schema-point
+            .schema-point(data-scroll  data-scroll-offset='50')
               span Оформляем документы
               a(href="#") Скачать список документов для вступления в СРО
-            .schema-point
+            .schema-point(data-scroll  data-scroll-offset='50')
               span Регистрируем специалистов в НРС
               a(href="#") Уточнить требования к сотрудникам
-            .schema-point
+            .schema-point(data-scroll  data-scroll-offset='50')
               span Вносите деньги на счет СРО
               a(href="#") Рассчитать стоимость
-            .schema-point
+            .schema-point(data-scroll  data-scroll-offset='50')
               span Получаете полный комплект документов, подтверждающих участие в СРО.
               a(href="#") Заказать услугу
         
         //- Schema Right
         .schema-right
-          .schema-items 
+          .schema-items
 
 
             //- Schema Item
-            .schema-item
+            .schema-item(data-scroll  data-scroll-offset='50')
               .schema-item__icon
                 img(src="static/img/assets/schema/s1.svg", alt="Schema")
               .schema-item__text
@@ -42,7 +42,7 @@ mixin schema(data)
                 +button('#','Оставить заявку').button-transparent.button-white
             
             //- Schema Item
-            .schema-item
+            .schema-item(data-scroll  data-scroll-offset='50')
               .schema-item__icon
                 img(src="static/img/assets/schema/s2.svg", alt="Schema")
               .schema-item__text
@@ -51,7 +51,7 @@ mixin schema(data)
                 +button('#','Оставить заявку').button-transparent.button-white
             
             //- Schema Item
-            .schema-item
+            .schema-item(data-scroll  data-scroll-offset='50')
               .schema-item__icon
                 img(src="static/img/assets/schema/s3.svg", alt="Schema")
               .schema-item__text
@@ -60,7 +60,7 @@ mixin schema(data)
                 +button('#','Оставить заявку').button-transparent.button-white
             
             //- Schema Item
-            .schema-item
+            .schema-item(data-scroll  data-scroll-offset='50')
               .schema-item__icon
                 img(src="static/img/assets/schema/s4.svg", alt="Schema")
               .schema-item__text
@@ -69,7 +69,7 @@ mixin schema(data)
                 +button('#','Оставить заявку').button-transparent.button-white
             
             //- Schema Item
-            .schema-item
+            .schema-item(data-scroll  data-scroll-offset='50')
               .schema-item__icon
                 img(src="static/img/assets/schema/s5.svg", alt="Schema")
               .schema-item__text
